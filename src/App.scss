@@ -1,0 +1,229 @@
+@font-face {
+  font-family: Exo;
+  src: url("./fonts/Exo2.0-Thin.otf") format("opentype");
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: 'Trebuchet MS';
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  font-weight: 300;
+  text-shadow: 0px 1px 1px #000000;
+  font-family: Exo;
+}
+
+.App {
+  text-align: center;
+  background: url('./images/bg.png');
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+
+  .section {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
+    max-width: 1120px;
+    margin-top: 24px;
+
+    @media (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+
+    &__wrap {
+
+      border-radius: 12px;
+      text-align: left;
+      height: 480px;
+      cursor: pointer;
+      clip-path: polygon(45px 0, 100% 0, 100% 100%, 0 100%, 0 45px);
+      padding: 4px;
+      background: #1698D9;
+
+      &-container {
+        background: #F2F2F2;
+        clip-path: polygon(43px 0, 100% 0, 100% 100%, 0 100%, 0 43px);
+        border-radius: 10px;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+
+        &-content {
+          background: url(./images/cat.png) no-repeat left bottom;
+          background-size: contain;
+          width: 100%;
+          height: 100%;
+          padding-top: 21px;
+          padding-left: 47px;
+        }
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #666666;
+
+        b {
+          font-weight: 700;
+        }
+      }
+
+      h3 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        color: #000000;
+        margin-top: 5px;
+      }
+
+      h4 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #000000;
+        margin-bottom: 15px;
+      }
+
+      .weight {
+        position: absolute;
+        right: 16px;
+        bottom: 16px;
+        height: 80px;
+        width: 80px;
+        background: #2EA8E6;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          color: white;
+          font-weight: 400;
+          font-size: 42px;
+          line-height: 40px;
+        }
+
+        span {
+          font-weight: 400;
+          font-size: 21px;
+          line-height: 22px;
+          text-align: center;
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    &__decription {
+      color: white;
+      font-size: 13px;
+      line-height: 15px;
+      margin-top: 14px;
+
+      b {
+        color: #22A7E9;
+        cursor: pointer;
+        border-bottom: 1px dashed #22A7E9;
+      }
+    }
+
+    &.hover {
+      .card__wrap {
+        background: #2EA8E6;
+
+        .weight {
+          background: #2EA8E6;
+        }
+      }
+
+      .card__decription b {
+        color: #2EA8E6;
+        border-bottom: 1px dashed #2EA8E6;
+      }
+    }
+
+    &.clicked {
+      .name {
+        color: #D91667;
+      }
+
+      .card__wrap {
+        background: #D91667;
+
+        .weight {
+          background: #D91667;
+        }
+      }
+
+
+    }
+
+    &.clicked.hover {
+      .name {
+        color: #E52E7A;
+      }
+
+      .card__wrap {
+        background: #E52E7A;
+
+        .weight {
+          background: #E52E7A;
+        }
+      }
+
+    }
+
+    &.disabled,
+    &.disabled.hover,
+    &.disabled.clicked {
+
+      .card__wrap-container-content {
+        opacity: 0.5;
+      }
+
+      .card__wrap {
+        background: #B3B3B3;
+
+
+        * {
+          color: #B3B3B3;
+        }
+
+        .weight {
+          background: #B3B3B3;
+
+          p,
+          span {
+            color: white;
+          }
+        }
+      }
+
+      .card__decription {
+        color: #FFFF66;
+      }
+    }
+  }
+}
