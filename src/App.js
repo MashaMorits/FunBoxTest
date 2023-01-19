@@ -30,7 +30,7 @@ function App() {
       gift: { numb: '5', text: 'мышей в подарок'},
       text: 'хозяин доволен',
       weight: '5',
-      disabled: true,
+      // disabled: true,
       description: { clicked: 'Филе из цыплят с трюфелями в бульоне.' }
     }
   ]);
