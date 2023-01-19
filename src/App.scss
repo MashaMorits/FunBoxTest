@@ -51,6 +51,10 @@ h1 {
     width: 100%;
     max-width: 320px;
 
+    *{
+      transition: all .3s ease;
+    }
+
     &__wrap {
 
       border-radius: 12px;
