@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/MashaMorits/FunBoxTest.git/static/css/main.cb01c989.css",
-    "main.js": "/MashaMorits/FunBoxTest.git/static/js/main.ddd8b5cd.js",
-    "static/media/Exo2.0-Thin.otf": "/MashaMorits/FunBoxTest.git/static/media/Exo2.0-Thin.51c257bfa8ec3e0cfb4b.otf",
-    "static/media/bg.png": "/MashaMorits/FunBoxTest.git/static/media/bg.7006b69c4b5e4fa85067.png",
-    "static/media/cat.png": "/MashaMorits/FunBoxTest.git/static/media/cat.955e5bc6132c4f94d8a5.png",
-    "index.html": "/MashaMorits/FunBoxTest.git/index.html",
-    "main.cb01c989.css.map": "/MashaMorits/FunBoxTest.git/static/css/main.cb01c989.css.map",
-    "main.ddd8b5cd.js.map": "/MashaMorits/FunBoxTest.git/static/js/main.ddd8b5cd.js.map"
+    "main.css": "/FunBoxTest/static/css/main.622e5e9d.css",
+    "main.js": "/FunBoxTest/static/js/main.ddd8b5cd.js",
+    "static/media/Exo2.0-Thin.otf": "/FunBoxTest/static/media/Exo2.0-Thin.51c257bfa8ec3e0cfb4b.otf",
+    "static/media/bg.png": "/FunBoxTest/static/media/bg.7006b69c4b5e4fa85067.png",
+    "static/media/cat.png": "/FunBoxTest/static/media/cat.955e5bc6132c4f94d8a5.png",
+    "index.html": "/FunBoxTest/index.html",
+    "main.622e5e9d.css.map": "/FunBoxTest/static/css/main.622e5e9d.css.map",
+    "main.ddd8b5cd.js.map": "/FunBoxTest/static/js/main.ddd8b5cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb01c989.css",
+    "static/css/main.622e5e9d.css",
     "static/js/main.ddd8b5cd.js"
   ]
 }
