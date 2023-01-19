@@ -50,6 +50,9 @@ h1 {
   .card {
     width: 100%;
     max-width: 320px;
+    *{
+      transition: all .3s ease;
+    }
 
     &__wrap {
 
@@ -165,6 +168,9 @@ h1 {
     }
 
     &.clicked {
+      *{
+        transition: all .3s ease;
+      }
       .name {
         color: #D91667;
       }
