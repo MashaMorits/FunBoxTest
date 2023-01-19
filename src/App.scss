@@ -165,6 +165,10 @@ h1 {
     }
 
     &.clicked {
+      *{
+        transition: all .3s ease;
+      }
+       
       .name {
         color: #D91667;
       }
